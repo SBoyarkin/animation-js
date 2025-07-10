@@ -1,0 +1,57 @@
+body {
+  font-family: Calibri;
+  background-color: #ececec;
+}
+.btn {
+  width: 5em;
+  height: 2em;
+  background-color: #008bff;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+
+.btn:hover {
+  background-color: #016ec6;
+  transition: 0.3s;
+
+}
+
+.collapse {
+  background-color: white;
+  padding: 1em;
+}
+
+.collapse-text {
+  border: solid 1px #d1d1d1;
+  border-radius: 0.5em;
+  padding: 1em;
+  height: 0;
+  box-sizing: border-box;
+    overflow: hidden;
+}
+
+.collapse-text:hover {
+  animation-name: collapse-active;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border: solid 1px #d1d1d1;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+@keyframes collapse-active {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px
+  ;
+  }
+}
