@@ -37,21 +37,40 @@ body {
     overflow: hidden;
 }
 
-.collapse-text:hover {
+.active {
   animation-name: collapse-active;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  border: solid 1px #d1d1d1;
-  border-radius: 0.5em;
-  padding: 1em;
 }
+
+
+.inactive {
+  animation-name: collapse-inactive;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
 
 @keyframes collapse-active {
   from {
-    height: 0px;
+    height: 0;
   }
   to {
     height: 100px
+  ;
+  }
+}
+
+
+
+@keyframes collapse-inactive {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 0;
   ;
   }
 }
