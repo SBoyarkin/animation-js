@@ -32,7 +32,7 @@ body {
   border: solid 1px #d1d1d1;
   border-radius: 0.5em;
   padding: 1em;
-  height: 0;
+  max-height: 0;
   box-sizing: border-box;
     overflow: hidden;
 }
@@ -54,23 +54,11 @@ body {
 
 
 @keyframes collapse-active {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100px
-  ;
-  }
+  from { max-height: 0; }
+  to { max-height: 1000px; }
 }
 
-
-
 @keyframes collapse-inactive {
-  from {
-    height: 100px;
-  }
-  to {
-    height: 0;
-  ;
-  }
+  from { max-height: 1000px; }
+  to { max-height: 0; }
 }
